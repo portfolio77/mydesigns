@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affectionate Animal Art</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #f8cdda, #f1f1f1);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .caption {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Affectionate Animal Art</h1>
+    <p>Soft watercolor illustrations of loving animals</p>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="husky.jpg" alt="Husky and puppy">
+      <div class="caption">Husky Mom and Puppy</div>
+    </div>
+    <div class="gallery-item">
+      <img src="shiba.jpg" alt="Shiba and puppy">
+      <div class="caption">Shiba and Puppy Cuddle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="shark.jpg" alt="Shark and baby underwater">
+      <div class="caption">Shark and Baby Underwater</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Charley's Affectionate Animals
+  </footer>
+</body>
+</html>
